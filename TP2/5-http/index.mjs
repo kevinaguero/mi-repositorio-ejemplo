@@ -4,7 +4,7 @@ import http from 'http';
 const server = http.createServer((req, res) =>{
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.end('¡Hola, soy Vilma!');
+    res.end('¡Hola, Mundo!');
 });
 
 //Configurar el servidor para que escuche en el puerto 3000
