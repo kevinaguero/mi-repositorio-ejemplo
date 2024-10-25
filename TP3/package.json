@@ -1,5 +1,5 @@
 {
-  "name": "practico3",
+  "name": "TP3",
   "version": "1.0.0",
   "description": "Superheroes",
   "main": "index.mjs",
@@ -7,6 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.mjs" 
   },
-  "author": "Vilma Ponce",
+  "author": "Kevin Agüero",
   "license": "ISC"
 }
