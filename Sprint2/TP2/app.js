@@ -15,6 +15,7 @@ const superheroSchema = new mongoose.Schema({
     poderes: [String],
     aliados: [String],
     enemigos: [String],
+    creador: { type: String, default: 'Kevin Aguero' },
     createdAt: { type: Date, default: Date.now }
 }, { collection: 'Grupo-04' });
 
