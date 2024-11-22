@@ -5,7 +5,7 @@ import {renderizarSuperheroe, renderizarListaSuperheroes} from '../views/respons
 
 export async function obtenerSuperheroePorIdController (req, res) { 
     const {id} = req.params;
-    const superheroe = obtenerSuperheroePorId({id}); 
+    const superheroe = obtenerSuperheroePorId(id); 
 
     if (superheroe) { 
         res.send(renderizarSuperheroe(superheroe)); 
