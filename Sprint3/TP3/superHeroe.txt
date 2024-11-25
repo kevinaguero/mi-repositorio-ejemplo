@@ -1,0 +1,11 @@
+superheroe a crear:
+{
+    "nombreSuperHeroe": "Flash",
+    "nombreReal": "Barry Allen",
+    "edad": 33,
+    "planetaOrigen": "Tierra",
+    "debilidad": "Cold temperatures",
+    "poder": ["Super speed", "Time travel"],
+    "aliado": ["Green Lantern"],
+    "enemigo": ["Reverse Flash"]
+}

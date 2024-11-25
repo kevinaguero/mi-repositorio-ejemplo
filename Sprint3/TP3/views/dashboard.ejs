@@ -1,0 +1,65 @@
+
+
+<main>
+    <h1>Dashboard de Superhéroes</h1>
+    <table border="1" style="width: 100%; text-align: left;">
+        <thead>
+            <tr>
+                <th>Nombre del Superhéroe</th>
+                <th>Nombre Real</th>
+                <th>Edad</th>
+                <th>Planeta de Origen</th>
+                <th>Debilidad</th>
+                <th>Poderes</th>
+                <th>Aliados</th>
+                <th>Enemigos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if (superheroes.length > 0) { %>
+                <% superheroes.forEach(superheroe => { %>
+                    <tr>
+                        <td><%= superheroe.nombreSuperHeroe %></td>
+                        <td><%= superheroe.nombreReal || '-'%></td>
+                        <td><%= superheroe.edad %></td>
+                        <td><%= superheroe.planetaOrigen %></td>
+                        <td><%= superheroe.debilidad || 'N/A' %></td>
+                        <td>
+                            <% if (superheroe.poder.length > 0) { %>
+                                <% superheroe.poder.forEach(p => { %>
+                                    <div><%= p %></div>
+                                <% }) %>
+                            <% } else { %>
+                                <div>N/A</div>
+                            <% } %>
+                        </td>
+                        <td>
+                            <% if (superheroe.aliado.length > 0) { %>
+                                <% superheroe.aliado.forEach(a => { %>
+                                    <div><%= a %></div>
+                                <% }) %>
+                            <% } else { %>
+                                <div>N/A</div>
+                            <% } %>
+                        </td>
+                        <td>
+                            <% if (superheroe.enemigo.length > 0) { %>
+                                <% superheroe.enemigo.forEach(e => { %>
+                                    <div><%= e %></div>
+                                <% }) %>
+                            <% } else { %>
+                                <div>N/A</div>
+                            <% } %>
+                        </td>
+                    </tr>
+                <% }) %>
+            <% } else { %>
+                <tr>
+                    <td colspan="8">No hay superhéroes disponibles.</td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+</main>
+
+
